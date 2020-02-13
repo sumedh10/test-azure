@@ -9,9 +9,12 @@ trigger:
 pool:
   vmImage: 'ubuntu-latest'
 
+container: 
+  image: 'rocker/r-base:latest'
+
 steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
+- script: Rscript -e 'print("hello world")'
+  displayName: 'Run R expression'
 
 - script: |
     echo Add other tasks to build, test, and deploy your project.
