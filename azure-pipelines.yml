@@ -10,7 +10,7 @@ pool:
   vmImage: 'ubuntu-16.04'
 
 container: 
-  image: 'rocker/r-ver:3.6.0'
+  image: 'rocker/r-base:3.6.0'
 
 steps:
 - script: Rscript -e 'R.version'
