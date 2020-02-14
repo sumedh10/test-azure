@@ -33,4 +33,4 @@ resources:
       endpoint: sumedh10
 
 jobs:
-  - template: azure-tidyverse.yml@r-azure-pipelines
+  - template: azure-tidyverse.yml@test
